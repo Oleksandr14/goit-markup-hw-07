@@ -1,0 +1,179 @@
+.footer {
+  background-color: var(--third-background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.flex-container {
+  display: flex;
+  align-items: baseline;
+}
+/*---------------------------Лого-------------------------------------*/
+
+.logo-footer {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-family: Raleway, Roboto, Aileron, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: var(--white-color);
+}
+
+/*-----------------Адрес---------------*/
+
+.adress-list {
+  margin-bottom: 9px;
+}
+
+.adress-list:last-child {
+  margin-bottom: 0;
+}
+
+.link-footer {
+  display: inline-block;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: var(--footer-contacts-color);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link-adress {
+  color: var(--white-color);
+}
+
+.adress-nav .link-adress:hover,
+.adress-nav .link-adress:focus {
+  color: var(--accent-color);
+}
+.adress-nav .link-footer:hover,
+.adress-nav .link-footer:focus {
+  color: var(--accent-color);
+}
+
+/*--------Присоединяйтесь-футер------*/
+
+.networks {
+  margin-left: 70px;
+}
+
+.footer-networks-list {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-networks-item + .footer-networks-item {
+  margin-left: 10px;
+}
+
+.footer-networks-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.1);
+  align-items: center;
+  justify-content: center;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-networks-link:hover,
+.footer-networks-link:focus {
+  background-color: var(--accent-color);
+}
+
+.footer-networks-icon {
+  display: block;
+  fill: var(--white-color);
+}
+
+.networks-title {
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+
+/*------------Подпишитесь на рассылку-----------*/
+
+.container-form {
+  margin-left: 93px;
+}
+
+.container-form-second {
+  display: flex;
+  align-items: center;
+}
+
+.container-form-title {
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+
+.footer-email {
+  outline: none;
+  padding: 15px;
+  width: 358px;
+  height: 50px;
+  background-color: var(--third-background-color);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-email:focus {
+  border-color: var(--accent-color);
+}
+
+.footer-email::placeholder {
+  font-size: 16;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.container-btn-footer {
+  position: relative;
+  margin-left: 12px;
+}
+
+.button-footer {
+  padding-right: 61px;
+  padding-left: 28px;
+  min-width: 200px;
+  height: 50px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--white-color);
+  border: 1px solid transparent;
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.form-icon-footer {
+  position: absolute;
+  top: 13px;
+  right: 28px;
+  margin-left: 10px;
+  fill: var(--white-color);
+}
