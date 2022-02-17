@@ -4,35 +4,23 @@
   padding-bottom: 60px;
 }
 
-.flex-container {
+.footer__container {
   display: flex;
   align-items: baseline;
 }
 /*---------------------------Лого-------------------------------------*/
 
-.logo-footer {
-  display: inline-block;
-  margin-bottom: 20px;
-  font-family: Raleway, Roboto, Aileron, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-  color: var(--white-color);
-}
-
 /*-----------------Адрес---------------*/
 
-.adress-list {
+.adress-footer__list {
   margin-bottom: 9px;
 }
 
-.adress-list:last-child {
+.adress-footer__list:last-child {
   margin-bottom: 0;
 }
 
-.link-footer {
+.adress-footer__link {
   display: inline-block;
   font-style: normal;
   font-size: 14px;
@@ -44,16 +32,16 @@
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.link-adress {
+.adress-footer__link--white-color {
   color: var(--white-color);
 }
 
-.adress-nav .link-adress:hover,
-.adress-nav .link-adress:focus {
+.adress-footer__link--white-color:hover,
+.adress-footer__link--white-color:focus {
   color: var(--accent-color);
 }
-.adress-nav .link-footer:hover,
-.adress-nav .link-footer:focus {
+.adress-footer__link:hover,
+.adress-footer__link:focus {
   color: var(--accent-color);
 }
 
@@ -63,16 +51,25 @@
   margin-left: 70px;
 }
 
-.footer-networks-list {
+.networks__title {
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+
+.footer-socials {
   display: flex;
   justify-content: center;
 }
 
-.footer-networks-item + .footer-networks-item {
+.footer-socials__item + .footer-socials__item {
   margin-left: 10px;
 }
 
-.footer-networks-link {
+.footer-socials__link {
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -84,23 +81,14 @@
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-networks-link:hover,
-.footer-networks-link:focus {
+.footer-socials__link:hover,
+.footer-socials__link:focus {
   background-color: var(--accent-color);
 }
 
-.footer-networks-icon {
+.footer-socials__icon {
   display: block;
   fill: var(--white-color);
-}
-
-.networks-title {
-  margin-bottom: 20px;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--white-color);
 }
 
 /*------------Подпишитесь на рассылку-----------*/
@@ -109,12 +97,7 @@
   margin-left: 93px;
 }
 
-.container-form-second {
-  display: flex;
-  align-items: center;
-}
-
-.container-form-title {
+.container-form__title {
   margin-bottom: 20px;
   font-size: 14px;
   line-height: 1.14;
@@ -123,7 +106,12 @@
   color: var(--white-color);
 }
 
-.footer-email {
+.form-footer {
+  display: flex;
+  align-items: center;
+}
+
+.form-footer__email {
   outline: none;
   padding: 15px;
   width: 358px;
@@ -136,11 +124,11 @@
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-email:focus {
+.form-footer__email:focus {
   border-color: var(--accent-color);
 }
 
-.footer-email::placeholder {
+.form-footer__email::placeholder {
   font-size: 16;
   line-height: 1.25;
   letter-spacing: 0.03em;
@@ -148,12 +136,12 @@
   color: rgba(255, 255, 255, 0.6);
 }
 
-.container-btn-footer {
+.form-footer__container {
   position: relative;
   margin-left: 12px;
 }
 
-.button-footer {
+.form-footer__button {
   padding-right: 61px;
   padding-left: 28px;
   min-width: 200px;
@@ -170,7 +158,7 @@
   border-radius: 4px;
 }
 
-.form-icon-footer {
+.form-footer__icon {
   position: absolute;
   top: 13px;
   right: 28px;
