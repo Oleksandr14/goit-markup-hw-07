@@ -9,11 +9,11 @@
   background-color: var(--white-color);
   border-bottom: 1px solid #ececec;
   z-index: 1;
-}
 
-.header__contain {
-  display: flex;
-  align-items: center;
+  &__contain {
+    display: flex;
+    align-items: center;
+  }
 }
 
 /*------------------------------Логотип-------------------------------------*/
@@ -27,14 +27,14 @@
 
 .site-nav {
   display: flex;
-}
 
-.site-nav__item {
-  margin-right: 50px;
-}
+  &__item {
+    margin-right: 50px;
+  }
 
-.site-nav__item:last-child {
-  margin-right: 0;
+  &__item:last-child {
+    margin-right: 0;
+  }
 }
 
 .site-nav__link {
@@ -45,27 +45,27 @@
   text-decoration: none;
   color: var(--title-text-color);
   position: relative;
-
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.site-nav__link--current::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  background-color: var(--accent-color);
-  left: 0;
-  bottom: -32px;
-}
-.site-nav__link:hover,
-.site-nav__link:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .site-nav__link--current {
   color: var(--accent-color);
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--accent-color);
+    left: 0;
+    bottom: -32px;
+  }
 }
 
 /*------------------------------Телефон и почта----------------------------*/
@@ -73,10 +73,10 @@
 .contact-nav {
   display: flex;
   margin-left: auto;
-}
 
-.contact-nav__item + .contact-nav__item {
-  margin-left: 50px;
+  &__item + &__item {
+    margin-left: 50px;
+  }
 }
 
 .contact-nav__link {
@@ -86,26 +86,26 @@
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--primary-text-color);
-
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.contact-nav__link:hover,
-.contact-nav__link:focus {
-  color: var(--accent-color);
-}
 
-.contact-nav__link--flex {
-  display: flex;
-  align-items: center;
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+
+  &--flex {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .contact-nav__icon {
   display: block;
   margin-right: 10px;
   fill: var(--primary-text-color);
-}
 
-.contact-nav__link:hover .contact-nav__icon,
-.contact-nav__link:focus .contact-nav__icon {
-  fill: var(--accent-color);
+  .contact-nav__link:hover &,
+  .contact-nav__link:focus & {
+    fill: var(--accent-color);
+  }
 }

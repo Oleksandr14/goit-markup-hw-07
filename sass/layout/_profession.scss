@@ -4,14 +4,14 @@
 
 .profession-list {
   display: flex;
-}
 
-.profession-list__item {
-  margin-right: 30px;
-}
+  &__item {
+    margin-right: 30px;
+  }
 
-.profession-list__item:last-child {
-  margin-right: 0;
+  &__item:last-child {
+    margin-right: 0;
+  }
 }
 
 .profession-list__container {
