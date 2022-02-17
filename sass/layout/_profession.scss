@@ -1,24 +1,24 @@
-.section.top {
+.section__padding-top {
   padding-top: 47px;
 }
 
-.picture-list {
+.profession-list {
   display: flex;
 }
 
-.picture {
+.profession-list__item {
   margin-right: 30px;
 }
 
-.picture:last-child {
+.profession-list__item:last-child {
   margin-right: 0;
 }
 
-.container-text-wrap {
+.profession-list__container {
   position: relative;
 }
 
-.text-picture-wrap {
+.profession-list__text {
   position: absolute;
   font-weight: 700;
   font-size: 14px;

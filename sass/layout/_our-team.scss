@@ -1,9 +1,9 @@
-.team-list {
-  display: flex;
+.section__team--background {
+  background-color: var(--second-background-color);
 }
 
-.section.background {
-  background-color: var(--second-background-color);
+.team-list {
+  display: flex;
 }
 
 .li-team {
