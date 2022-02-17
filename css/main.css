@@ -66,7 +66,7 @@ img {
   padding-right: 15px;
 }
 
-.section-title {
+.section__title {
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -484,7 +484,7 @@ img {
   text-align: center;
 }
 
-.section__padding-bottom {
+.main__section-preference {
   padding-bottom: 47px;
 }
 
@@ -542,7 +542,7 @@ img {
   background-image: url(../images/astronaut.svg);
 }
 
-.section__padding-top {
+.main__section-profession {
   padding-top: 47px;
 }
 
@@ -578,7 +578,7 @@ img {
   transform: translateY(-70px);
 }
 
-.section__team--background {
+.main__section-team {
   background-color: var(--second-background-color);
 }
 
@@ -586,7 +586,7 @@ img {
   display: flex;
 }
 
-.li-team {
+.team-list__item {
   margin-right: 30px;
   padding-bottom: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -594,15 +594,15 @@ img {
   background-color: #ffffff;
 }
 
-.li-team:last-child {
+.team-list__item:last-child {
   margin-right: 0;
 }
 
-.img-team {
+.team-list__img {
   margin-bottom: 30px;
 }
 
-.team-list .title {
+.team-list__title {
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -612,7 +612,7 @@ img {
   color: var(--title-text-color);
 }
 
-.team-list .specialty {
+.team-list__specialty {
   margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.18;
@@ -620,16 +620,16 @@ img {
   letter-spacing: 0.03em;
 }
 
-.masters-social-list {
+.team-socials {
   display: flex;
   justify-content: center;
 }
 
-.masters-social-item + .masters-social-item {
+.team-socials__item + .team-socials__item {
   margin-left: 10px;
 }
 
-.masters-social-link {
+.team-socials__link {
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -639,19 +639,19 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.masters-social-icon {
+.team-socials__icon {
   display: block;
   fill: #afb1b8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.masters-social-link:hover,
-.masters-social-link:focus {
+.team-socials__link:hover,
+.team-socials__link:focus {
   background-color: var(--accent-color);
 }
 
-.masters-social-link:hover .masters-social-icon,
-.masters-social-link:focus .masters-social-icon {
+.team-socials__link:hover .team-socials__icon,
+.team-socials__link:focus .team-socials__icon {
   fill: var(--white-color);
 }
 
